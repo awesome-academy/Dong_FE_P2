@@ -282,18 +282,42 @@ $number-of-slides: 10;
     display: flex;
     justify-content: center;
     align-items: center;
+    button{
+      margin: 0 12px;
+      font-size: 18px;
+      color: #000;
+      border: 0;
+      background: none;
+      outline: 0;
+      font-family: "utm-facebook-k-t";
+      font-weight: bold;
+      border: 1px solid #789629;
+      padding: 5px;
+      &:hover{
+        cursor: pointer;
+        background: #789629;
+        color: #fff;
+      }
+    }
     span {
       margin: 0 12px;
       font-size: 18px;
       color: #c1c1c1;
+      
       &:nth-child(2) {
         color: #789629;
         font-size: 34px;
         @include resFontSize(768px, 24px);
         @include resFontSize(480px, 32px);
+        &:hover{
+          cursor: pointer;
+          background: #789629;
+          color: #fff;
+        }
       }
       @include resFontSize(768px, 14px);
       @include resFontSize(480px, 16px);
+      
     }
     @media screen and (max-width: 480px) {
       flex-direction: column;

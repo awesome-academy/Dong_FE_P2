@@ -9,13 +9,14 @@
   font-weight: 300;
 }
 header {
-  // margin: 0 auto;
-  // background-image: url('/asset/banner_tit.jpg');
-  // width: 100%;
-  // height: 855px;
-  // background-position: 50%;
-  // background-repeat: no-repeat;
-  // position: relative;
+  margin: 0 auto;
+  background-image: url('/asset/banner_tit.jpg');
+  width: 100%;
+  height: 855px;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  position: relative;
+
   nav {
     background-color: rgba(244, 244, 244, 0.5);
     display: grid;
@@ -131,14 +132,14 @@ header {
       .fa-shopping-cart {
         cursor: pointer;
         margin: 35px 0;
-        &:hover {
-          color: #789629;
-          .nav__right-all {
-            // display: block;
-            opacity: 1;
-            transition: 0.8s ease-in-out;
-          }
-        }
+        // &:hover {
+        //   color: #789629;
+        //   .nav__right-all {
+        //     // display: block;
+        //     opacity: 1;
+        //     transition: 0.8s ease-in-out;
+        //   }
+        // }
         .nav__right-number {
           display: inline-block;
           background-color: #789629;
@@ -270,6 +271,13 @@ header {
         @media screen and (max-width: 768px) {
           display: inline-block;
         }
+      }
+      a {
+        text-decoration: none;
+        color: #000;
+        margin: 0 5px;
+        background: #789629;
+        padding: 10px;
       }
     }
     @media screen and (max-width: 480px) {

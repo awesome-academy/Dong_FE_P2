@@ -75,10 +75,11 @@
         .fa-long-arrow-alt-left {
           font-size: 18px;
           margin-right: 8px;
-          span {
-            @include fontSizeAndColor(12px, #ffffff);
-            @include fontAndWeight($fontOpen);
-          }
+        }
+        a {
+          text-decoration: none;
+          @include fontSizeAndColor(12px, #ffffff);
+          @include fontAndWeight($fontOpen);
         }
       }
     }

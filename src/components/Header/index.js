@@ -1,5 +1,6 @@
 import React from 'react';
 import './Header.scss';
+import { Link } from 'react-router-dom';
 export default function Header() {
   return (
     <header>
@@ -62,7 +63,7 @@ export default function Header() {
         <div className='nav__right'>
           <i className='fas fa-shopping-cart'>
             <i className='nav__right-number'>2</i>
-            <div className='nav__right-all'>
+            {/* <div className='nav__right-all'>
               <div className='nav__right-detail'>
                 <img src='../../../asset/boy.jpg' alt='' />
                 <div>
@@ -94,13 +95,15 @@ export default function Header() {
                   GIỎ HÀNG
                 </a>
               </div>
-            </div>
+            </div> */}
           </i>
           <i className='fas fa-search'></i>
           <i className='fas fa-bars'></i>
+          <Link to='/login' className='nav__right-sign' >Sign In</Link>
+          <Link to='/register' className='nav__right-sign' >Sign Up</Link>
         </div>
       </nav>
-      {/* <div className='bannerText'>
+      <div className='bannerText'>
         <div className='bannerText-desc'>
           <h5>GreenVera</h5>
           <p>Sản phẩm tinh dầu dưỡng da mới nhất của Mandala </p>
@@ -109,7 +112,7 @@ export default function Header() {
           </h6>
           <a href='helo'>Mua hàng</a>
         </div>
-      </div> */}
+      </div>
     </header>
   );
 }
